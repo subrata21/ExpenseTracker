@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Expense Tracker</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a2e; --muted: #555a6e; --rule: #e4e4ef;
+    --accent: #6d28d9; --card: #f7f5ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1117; --fg: #e8e8f0; --muted: #a8adbf; --rule: #272a36;
+            --accent: #a78bfa; --card: #171a24; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    padding: 48px 20px 80px;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 36px; }
+  h2 { font-size: 20px; margin: 38px 0 10px; padding-top: 18px; border-top: 1px solid var(--rule); }
+  h3 { font-size: 16px; margin: 22px 0 6px; }
+  p, li { color: var(--fg); }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  strong { font-weight: 600; }
+  .lead { background: var(--card); border-left: 3px solid var(--accent);
+          padding: 14px 18px; border-radius: 6px; }
+  code { background: var(--card); padding: 1px 6px; border-radius: 4px; font-size: 14px; }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy — Expense Tracker</h1>
+  <p class="updated">Last updated: 1 November 2026</p>
+
+  <p class="lead">Expense Tracker is a private, offline-first app for tracking expenses,
+  budgets, debts and credit cards. Everything you enter stays on your own device. The app
+  has no accounts, no servers and no analytics, and it does not need an internet
+  connection. We have no way to see your data.</p>
+
+  <h2>What we collect</h2>
+  <p><strong>Nothing.</strong> The developer collects, receives and stores no personal
+  data, no usage data and no analytics. There is no backend, no account system, no
+  advertising SDK and no third-party tracking in this app.</p>
+
+  <h2>What the app stores on your device</h2>
+  <p>Everything you enter is kept in a private on-device database:</p>
+  <ul>
+    <li>Expenses, income, categories, budgets and recurring rules</li>
+    <li>Debts you owe and are owed</li>
+    <li>Credit cards you add, and their statements and bill payments</li>
+    <li>Your settings: name, currency, theme and reminder preferences</li>
+  </ul>
+
+  <h3>About credit cards</h3>
+  <p>The app stores only what is needed to track a bill: a card name you choose, the bank
+  or issuer, the credit limit, the statement and due dates, and optionally the
+  <strong>last four digits</strong> as a label. It never asks for and never stores a full
+  card number, CVV, PIN, expiry date or banking credentials. The app cannot connect to
+  your bank — every figure is one you entered yourself.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Notifications</strong> — used only for reminders your device schedules
+    locally: expense logging nudges and credit card bill reminders. Declining it disables
+    reminders and nothing else.</li>
+    <li><strong>Biometric / screen lock</strong> — if you turn on App Lock, the app asks
+    Android to verify you with the fingerprint, face or screen lock you already use. That
+    happens entirely inside the operating system. The app never sees or stores your
+    fingerprint, face data or PIN; it only learns whether Android approved the attempt.</li>
+  </ul>
+  <p>Android also lists a few permissions that the app's scheduling library adds and that
+  are granted automatically, without a prompt. None of them can read your data:</p>
+  <ul>
+    <li><strong>Run at startup</strong> — re-arms reminders after the phone restarts, so a
+    bill reminder isn't lost by rebooting.</li>
+    <li><strong>Prevent sleeping</strong> and <strong>foreground service</strong> — let a
+    scheduled reminder finish reliably.</li>
+    <li><strong>View network connections</strong> — part of the same library, and never
+    used, because there is nothing to connect to.</li>
+  </ul>
+  <p>Most importantly, the app does <strong>not</strong> hold the <code>INTERNET</code>
+  permission. Android will not let it open a network connection at all, so it is not
+  technically capable of transmitting your data anywhere — by design, rather than by
+  promise.</p>
+
+  <h2>Backups — the one case where data leaves the device</h2>
+  <p>Your data can leave the device only by your own action, or through Android's own
+  backup feature. We never receive a copy either way.</p>
+  <ul>
+    <li><strong>Android Auto Backup.</strong> Like most Android apps, this app lets the
+    operating system include its data in your device backup. Android encrypts that backup
+    and stores it in <em>your</em> Google account, so your expenses survive a new phone.
+    That is handled by Google and your device, not by us, and is covered by Google's
+    privacy policy. You can switch it off in Android Settings → Google → Backup.</li>
+    <li><strong>Backup file (JSON).</strong> Settings → Backup writes a file to a location
+    you pick. If you enable weekly automatic backups, the app writes to the folder you
+    chose — including a cloud folder, if that is what you picked.</li>
+    <li><strong>CSV export.</strong> Settings → Export writes a CSV you can save or share.</li>
+  </ul>
+  <p>Files you export or back up are yours to manage; once shared, their privacy depends
+  on where you put them.</p>
+
+  <h2>Your control over your data</h2>
+  <ul>
+    <li><strong>Export</strong> everything at any time as CSV or as a full JSON backup.</li>
+    <li><strong>Delete</strong> everything by uninstalling the app, which removes its local
+    database. There is no server-side copy, because none exists.</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>The app is not directed at children and collects no data from anyone, of any age.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If the app's data practices change — for example if cloud sync or advertising were
+  ever added — this policy will be updated and the date revised before that version is
+  released.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy:
+  <a href="mailto:gamessubstrate@gmail.com">gamessubstrate@gmail.com</a></p>
+
+  <footer>
+    Expense Tracker · This page is the privacy policy referenced by the app's Google Play
+    listing.
+  </footer>
+</main>
+</body>
+</html>
